@@ -44,30 +44,11 @@ Here we go, the `example-bot` is now ready to be fired up! :fire:
 
 If everything has been set up right the bot is now running in your virtual machine, open a Telegram chat with it and try the basic command `/whoami`, the bot should answer with your profile picture, id and other infos.
 
-!!! summary "What have we done so far and getUpdatesCLI.php breakdown"
-    
-
-
+??? summary "What have we done so far and getUpdatesCLI.php breakdown"
+    * Lines 16-17: We specified our bot credential to allows the framework to interact with the Telegram APIs.
+    * Lines 20-21: As we will see later on the bot can recognzie __who__ is executing a command, this way we can restrict certain commands to admin users.
+    * Lines 25-26: All the commands are separate files and you can organize them in separate folders, we need to specify their paths for the framework to be able to recognize them.
+    * Lines 29-35: For various usage cases a MySQL database it is very useful, during the "Vagrant up" ran earlier in the docs we automagically generate one for you with the default username and password like the ones specified in getUpdatesCLI.
+    * Lines 50-53: You can uncomment this lines to enable logging, very useful when something isn't working. The logs will be written in the bot root direcotry.
+    * Lines 58-60: In the case where the bot will handle download and upload of files here you can specify its location.
  ---
-
-## :point_right: Webhook installation
-
-!!! attention
-    From now on the Documentation will assume that you are using the installation with the `manager.php` functionality. If you followed the previous steps, you're fine and you don't have to worry about it since the `example-bot` already comes shipped with it.
-
-
-## Meet the manager!
-
-!!! info
-    `manager.php` is a special file that can handles different management task for our bot as shown later. It is most useful when your bot lives online on a remote VPS.
-
-!!! warning
-    While developing your bot in your _local development enviroment_ `manager.php` has no real use.
-    Skip to [Configure getUpdatesCLI.php](#configure-getupdatescli)
-
- The bare minimum setup for `manager.php` is the following, where you need to replace the `'api_key'`, `'bot_username'`, `'secret'` and `'webhook'` values with your own.
-
-
-
-
- [^1]: It **must** support the UTF-8 encoding, if you don't know what I'm talking about chances are you are good with your editor since it's the default 99% of the time.

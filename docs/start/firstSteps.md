@@ -45,10 +45,9 @@ Here we go, the `example-bot` is now ready to be fired up! :fire:
 If everything has been set up right the bot is now running in your virtual machine, open a Telegram chat with it and try the basic command `/whoami`, the bot should answer with your profile picture, id and other infos.
 
 ??? summary "What have we done so far and getUpdatesCLI.php breakdown"
-    * Lines 16-17: We specified our bot credential to allows the framework to interact with the Telegram APIs.
-    * Lines 20-21: As we will see later on the bot can recognzie __who__ is executing a command, this way we can restrict certain commands to admin users.
+    * Lines 16-17: We specified our bot credential to allow the framework to interact with the Telegram APIs.
+    * Lines 20-21: As we will see later on, the bot can recognzie _who_ is executing a command, this way we can restrict certain commands to a group of admin users.
     * Lines 25-26: All the commands are separate files and you can organize them in separate folders, we need to specify their paths for the framework to be able to recognize them.
     * Lines 29-35: For various usage cases a MySQL database it is very useful, during the "Vagrant up" ran earlier in the docs we automagically generate one for you with the default username and password like the ones specified in getUpdatesCLI.
     * Lines 50-53: You can uncomment this lines to enable logging, very useful when something isn't working. The logs will be written in the bot root direcotry.
     * Lines 58-60: In the case where the bot will handle download and upload of files here you can specify its location.
- ---

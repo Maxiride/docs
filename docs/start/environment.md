@@ -75,4 +75,4 @@ $ vagrant ssh
 
 
 <!-- snippets -->
---8<-- 'linkIndex.md'
+--8<-- 'extra/linkIndex.md'

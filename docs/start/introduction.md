@@ -37,4 +37,4 @@ At the end of the guide it will be up to your creativity to actually build a bot
 
 
 <!-- snippets -->
---8<-- 'linkIndex.md'
+--8<-- 'extra/linkIndex.md'

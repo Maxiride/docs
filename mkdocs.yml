@@ -1,7 +1,7 @@
 # Site infos
 site_name: 'PHP Telegram Bot Documentation'
 site_description: 'A pure PHP Telegram Bot, fully extensible via plugins.'
-# site_url: the .io/docs url of the gh-pages
+# site_url: documentation website url
 copyright: 'MIT License'
 
 # Repo infos
@@ -16,6 +16,8 @@ pages:
     - Environment: start/environment.md
     - Registering your bot: start/registering.md
     - First steps with the code: start/firstSteps.md
+    - Example Commands Breakdown:
+      - Commands: start/commands.md
 
   - Core: core/core_introduction.md
 
@@ -70,7 +72,7 @@ markdown_extensions:
     - pymdownx.escapeall
 
     - pymdownx.snippets:
-        base_path: 'extra'
+        base_path: 'docs'
 
     - pymdownx.highlight:
         css_class: codehilite
